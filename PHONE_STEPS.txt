@@ -1,0 +1,12 @@
+خطوات مختصرة من الهاتف:
+
+1) حمّل alhadi-cmms-apk-github.zip من ChatGPT.
+2) افتح GitHub Codespaces للمستودع.
+3) ارفع ZIP داخل Codespaces.
+4) افتح Terminal والصق هذا الأمر:
+
+rm -rf /tmp/cmms-apk && mkdir -p /tmp/cmms-apk && unzip alhadi-cmms-apk-github.zip -d /tmp/cmms-apk && cp -a /tmp/cmms-apk/alhadi-cmms-apk-github/. . && git add . && git commit -m "Add Android APK build" && git push
+
+5) افتح Actions في GitHub.
+6) حمّل Artifact باسم Alhadi-CMMS-debug-apk.
+7) داخله app-debug.apk.
